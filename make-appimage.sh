@@ -13,7 +13,7 @@ export DEPLOY_OPENGL=1
 
 # Deploy dependencies
 quick-sharun /opt/xash3d/*
-mv -v /opt/xash3d/valve/extras.pk3 ./AppDir/bin
+mv -v /opt/xash3d/extras.pk3 ./AppDir/bin
 #mv /opt/xash3d/* ./AppDir/bin
 #echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin' >> ./AppDir/.env
 
