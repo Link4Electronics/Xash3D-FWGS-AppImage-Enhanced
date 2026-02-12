@@ -17,6 +17,9 @@
 
 </div>
 
+## ⚠️ Compile [hldsk-portable](https://github.com/FWGS/hlsdk-portable) for non-x86(-D64BIT=1) and move `client_amd64/arm64.so` inside `valve/cl_dlls` and `hl_amd64/arm64.so` inside `valve/dlls` ⚠️
+## ⚠️ Game assets within `~/.xash3d/valve` ⚠️
+
 ---
 
 AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
