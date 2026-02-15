@@ -40,3 +40,19 @@ mv -v 3rdparty/mainui/libmenu.so /opt/xash3d
 mv -v 3rdparty/extras/extras.pk3 /opt/xash3d
 mv -v ref/gl/libref_gl.so /opt/xash3d
 mv -v ref/soft/libref_soft.so /opt/xash3d
+
+echo "Making nightly build of Portable Half-Life SDK..."
+echo "---------------------------------------------------------------"
+# hlsdk-portable Libs required to make half-life 1 base game to work
+git clone --recursive --depth 1 https://github.com/FWGS/hlsdk-portable ./hlsdk-portable
+cd ./hlsdk-portable
+./waf configure -T release -8
+./waf
+case "$ARCH" in # they use AMD64 and ARM64 for libs
+	x86_64)  lib_arch=amd64;;
+	aarch64) lib_arch=arm64;;
+esac
+mv -v build/cl_dll/client_$lib_arch.so /opt/xash3d
+mv -v build/dlls/hl_$lib_arch.so /opt/xash3d
+
+

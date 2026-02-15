@@ -17,8 +17,7 @@
 
 </div>
 
-## ⚠️ Compile [hldsk-portable](https://github.com/FWGS/hlsdk-portable) for non-x86(-D64BIT=1) and move `client_amd64/arm64.so` inside `valve/cl_dlls` and `hl_amd64/arm64.so` inside `valve/dlls` ⚠️
-## ⚠️ Game assets within `~/.xash3d/valve` ⚠️
+## ⚠️ Copy `valve` folder from Half-life game to `~/.xash3d` ⚠️
 
 ---
 
