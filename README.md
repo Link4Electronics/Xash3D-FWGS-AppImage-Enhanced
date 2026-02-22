@@ -17,7 +17,7 @@
 
 </div>
 
-## ⚠️ Copy `valve` folder from Half-life game to `~/.xash3d` ⚠️
+## ⚠️ Copy `valve` directory from Half-life game to `~/.xash3d` ⚠️
 
 ---
 
