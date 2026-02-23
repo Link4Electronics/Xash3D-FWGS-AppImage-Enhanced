@@ -19,4 +19,3 @@ if [ ! -f "dir"/valve/cl_dlls/client_$lib_arch.so ]; then
   cp "$APPDIR"/shared/lib/xash3d/hl_$lib_arch.so "$dir"/valve/dlls
 fi
 cd "$dir"
-export XASH3D_BASEDIR=$dir
