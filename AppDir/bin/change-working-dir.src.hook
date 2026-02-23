@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/false
 
 ARCH=$(uname -m)
 
@@ -7,7 +7,7 @@ case "$ARCH" in
 	aarch64) lib_arch=arm64;;
 esac
 
-dir=${XDG_DATA_HOME:-~/.xash3d}
+dir=$HOME/.xash3d
 if [ ! -f "dir"/extras.pk3 ]; then
   mkdir -p "$dir"
   cp "$APPDIR"/bin/extras.pk3 "$dir"
