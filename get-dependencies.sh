@@ -10,7 +10,7 @@ pacman -Syu --noconfirm \
     fontconfig \
     libdecor   \
     python     \
-    sdl3
+    sdl2
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
